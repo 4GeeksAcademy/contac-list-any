@@ -1,0 +1,30 @@
+body {
+    background-color: white;
+}
+h1 {
+    margin-top: 15px;
+    display: flex;
+    transform: translateX(65%);
+    text-align: center;
+    width: 500px;
+}
+form {
+    transform: translateX(18.4%);
+    height: 640px;
+    width: 1000px;
+    background-color: white;
+}
+.btn-b {
+    display: flex;
+    transform: translateY(2%) translateX(-3%);
+    text-decoration: underline;
+    border: none;
+    background-color: white;
+    color: blue;
+}
+.btn-c {
+    width: 1000px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+}

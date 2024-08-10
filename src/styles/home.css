@@ -1,0 +1,42 @@
+
+.card {  
+    width: 1000px;
+    transform: translateX(18.4%);
+}
+.btn-a {
+    border-radius: 7px;  
+    border: none;
+    transform: translateX(690%);
+    width: 150px;
+    height: 35px;
+    margin-bottom: 11px;
+    margin-top: 11px;
+    background-color: green;
+    color: white;
+}
+.img-b {
+    transform: translateX(35%) translateY(10%);  
+    width:180px;
+    height:180px;
+    border-radius: 90px;
+}
+.icono {
+    display: flex;
+    transform: translateX(82%) translateY(-925%);
+}
+.icon {
+    display: flex;
+    transform: translateX(92%) translateY(-1026%);
+}
+.icon-a {
+    display: flex;
+    transform: translateX(-3.3%) translateY(-930%);
+}
+.icon-b {
+    display:flex;
+    transform: translateX(-3.3%) translateY(-762%);
+}
+.icon-c {
+    display: flex;
+    transform: translateX(-3.3%) translateY(-620%);
+}
