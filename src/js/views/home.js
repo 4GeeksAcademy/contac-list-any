@@ -9,7 +9,7 @@ export const Home = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("https://playground.4geeks.com/contact/agendas/any/contacts")
+        fetch("https://playground.4geeks.com/contact/agendas/Any/contacts")
             .then((response) => response.json())
             .then((data) => setContacts(data.contacts))
             .catch((error) => console.error('Error fetching contacts:', error));

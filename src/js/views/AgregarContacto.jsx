@@ -36,12 +36,12 @@ const ContactForm = () => {
             email: email,
             phone: phone,
             address: address,
-            agenda_slug: "any"
+            agenda_slug: "Any"
         };
 
         const url = id 
-            ? `https://playground.4geeks.com/contact/agendas/any/contacts${id}` 
-            : "https://playground.4geeks.com/contact/agendas/any/contacts";
+            ? `https://playground.4geeks.com/contact/agendas/Any/contacts${id}` 
+            : "https://playground.4geeks.com/contact/agendas/Any/contacts";
 
         const method = id ? "PUT" : "POST";
 

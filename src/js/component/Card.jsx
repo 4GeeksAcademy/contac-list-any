@@ -17,7 +17,7 @@ const Card = ({ id, name, phone, address, email }) => {
     const confirmed = window.confirm("Are you sure you want to delete this contact?");
     if (!confirmed) return;
 
-    const deleteUrl = `https://playground.4geeks.com/contact/agendas/any/contacts/${id}`;
+    const deleteUrl = `https://playground.4geeks.com/contact/agendas/Any/contacts/${id}`;
     console.log(`DELETE URL: ${deleteUrl}`);
 
     fetch(deleteUrl, {
