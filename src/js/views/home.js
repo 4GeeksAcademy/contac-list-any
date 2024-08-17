@@ -5,8 +5,17 @@ import { useNavigate } from "react-router";
 import { ContactContext } from "../component/contactContext.js";
 
 export const Home = () => {
-    const { contacts, setContacts } = useContext(ContactContext); 
+    const { contacts, setContacts } = useContext(ContactContext);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        fetch("https://playground.4geeks.com/contact/agendas/Any", {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            }
+        });
+    }, []);
 
     useEffect(() => {
         fetch("https://playground.4geeks.com/contact/agendas/Any/contacts")
@@ -17,8 +26,7 @@ export const Home = () => {
 
     return (
         <>
-            <button className="btn-a btn-info" onClick={() => navigate("/addcontact")}>Add a new contact</button>
-            
+            <button className="btn-a btn-info" onClick={() => navigate("/addcontact")}>Add a new contact</button>         
             {contacts && contacts.map((element, index) => {
                 return (
                     <Card
@@ -34,4 +42,3 @@ export const Home = () => {
         </>
     );
 };
-
